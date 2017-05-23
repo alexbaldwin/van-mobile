@@ -19,3 +19,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_t
 
 CSS positioning:
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+## How to run locally
+
+Open Terminal and `cd` into the directory where you downloaded the project.
+Paste in the following command to get ruby to host the file locally. You can
+then go to `http://localhost:8000` in your browser and get to work.
+
+```
+$ ruby -run -ehttpd . -p8000
+```
