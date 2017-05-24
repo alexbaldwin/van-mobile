@@ -9,43 +9,60 @@
 
     <link rel="stylesheet" href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css">
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.7/flickity.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.7/flickity.pkgd.min.js"></script>
+    <style>
+      body, h1, h2, h3, h4, h5, h6, p, li {
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-silver">
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <nav class="">
-      <div class="">
-        <i class="im im-menu"></i>
+    <div class="container mx-auto bg-black">
+    <nav class="flex container fixed col-12 bg-black">
+      <div class="p2 flex-none">
+        <i class="im im-menu white"></i>
       </div>
-      <div class="">
-        <i class="im im-bell"></i>
+      <div class="flex-auto"></div>
+      <div class="p2 flex-none">
+        <i class="im im-bell white"></i>
       </div>
     </nav>
-    <header class="">
-      <img src="https://images.unsplash.com/profile-1461350776527-4b2612ff88d8?dpr=2&auto=compress,format&fit=crop&w=128&h=128&q=80&cs=tinysrgb&crop=faces&bg=fff">
-      <h1 class="">Tobias Van Schneider</h1>
-      <h2 class="">@vanschneider</h2>
-      <a href="#" class="">Follow</a>
-    </header>
-    <section class="">
-      <img src="http://unsplash.com/photos/vrRL4q1gGc0/download?force=true" class="">
-      <img src="http://unsplash.com/photos/eZxS7tD1v0Q/download?force=true" class="">
-      <img src="http://unsplash.com/photos/MWFWz4DWwKI/download?force=true" class="">
-      <img src="http://unsplash.com/photos/lHGeqh3XhRY/download?force=true" class="">
-      <img src="http://unsplash.com/photos/9QrjShkAmnM/download?force=true" class="">
-      <img src="http://unsplash.com/photos/44t1AZNIMIE/download?force=true" class="">
+    <header class="" style="padding-top: 60px">
+      <img src="https://images.unsplash.com/profile-1461350776527-4b2612ff88d8?dpr=2&auto=compress,format&fit=crop&w=128&h=128&q=80&cs=tinysrgb&crop=faces&bg=fff" class="circle mx-auto block mb3" height="128" width="128">
+      <h1 class="white center h2 mt0 mb1">Tobias Van Schneider</h1>
+      <h2 class="white muted center h3 m0 normal">@vanschneider</h2>
+      <div class="center col-12 py3">
+      <a href="#" class="white muted btn btn-outline regular">Follow</a>
+  </div>
+</header>
+    <section class="p4" style="padding-bottom: 120px;">
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "prevNextButtons": false }'>
+        <div class="carousel-cell col-12"><img src="https://images.unsplash.com/photo-1444604499401-cc53923046cd?dpr=2&auto=compress,format&fit=max&w=450&q=80&cs=tinysrgb" class="block col-12"></div>
+        <div class="carousel-cell col-12"><img src="https://images.unsplash.com/photo-1444604499401-cc53923046cd?dpr=2&auto=compress,format&fit=max&w=450&q=80&cs=tinysrgb" class="block col-12"></div>
+        <div class="carousel-cell col-12"><img src="https://images.unsplash.com/photo-1444604499401-cc53923046cd?dpr=2&auto=compress,format&fit=max&w=450&q=80&cs=tinysrgb" class="block col-12"></div>
+        <div class="carousel-cell col-12"><img src="https://images.unsplash.com/photo-1444604499401-cc53923046cd?dpr=2&auto=compress,format&fit=max&w=450&q=80&cs=tinysrgb" class="block col-12"></div>
+        <div class="carousel-cell col-12"><img src="https://images.unsplash.com/photo-1444604499401-cc53923046cd?dpr=2&auto=compress,format&fit=max&w=450&q=80&cs=tinysrgb" class="block col-12"></div>
+    </div>
     </section>
-    <nav class="">
-      <div class="">
-        <i class="im im-picture-o"></i>
+    <nav class="container fixed bottom-0 col-12 bg-black flex flex-center">
+      <div class="flex-none p2">
+        <i class="im im-picture-o white muted"></i>
       </div>
-      <div class="">
-        <i class="im im-magnifier"></i>
+      <div class="flex-auto"></div>
+      <div class="flex-none p2">
+        <i class="im im-magnifier white muted"></i>
       </div>
-      <div class="">
-        <i class="im im-smiley-o"></i>
+      <div class="flex-auto"></div>
+      <div class="flex-none p2">
+        <i class="im im-smiley-o white muted"></i>
       </div>
     </nav>
+      </div>
   </body>
 </html>
